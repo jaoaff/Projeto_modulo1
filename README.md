@@ -20,3 +20,27 @@ Na sequencia é necessário alterar a premissão do do nosso script shell:
 Por fim basta exeutar o script:
 
 "./calc_exe,sh"
+
+## Programa python
+
+Este programa funciona coletanto 3 informações a nota da primeira e segunda prova e a nota de tabaho, esse inputs estão amarrados em um loop e uma condição, para que a nota possa ser calculada todos os campos devem estar preechidos, sendo assim o laço de repetição vai verificar se tudo foi preenchido e caso isso seja verdadeiro a média pode ser calculada.
+
+verifica_campo = True                                                                                                                                                                      
+
+while verifica_campo == True:
+ p1 = input("digite a nota da primeira prova de 0 a 10: ")
+ p2 = input("digite a nota da primeira prova de 0 a 10: ")
+ trab = input("digite a nota de trbalho de 0 a 10: ")
+ if p1 == "" or p2 == "" or trab == "":
+ print("Um dos tópicos ficou vazio, preencha novamente")
+ continue                                                      
+
+Dada a condição anterior, caso a condição seja falsa sera calculada a média entre as provas e será convertida para peso 7, tepois a nota de trabalho sera convertido para peso 3, depois sera feita a soma e o numero de casas apos a virgula sera limitada para 2, por fim será feita a apresetnação do resultado ao usuário e o loop será interrompido.
+ 
+ else:
+  media_convertida = (((float(p1) + float(p2)) / 2) * 7) / 10
+  trab_convertido = (float(trab) * 3) / 10
+  nota_final = media_convertida + trab_convertido
+  nota_final = round(nota_final, 2)
+  print("Sua nota final é:", nota_final)
+  break 
