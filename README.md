@@ -21,7 +21,7 @@ Por fim basta exeutar o script:
 
 "./calc_exe,sh"
 
-## Programa python
+## Programa python "calculadora.py"
 
 Este programa funciona coletanto 3 informações a nota da primeira e segunda prova e a nota de tabaho, esse inputs estão amarrados em um loop e uma condição, para que a nota possa ser calculada todos os campos devem estar preechidos, sendo assim o laço de repetição vai verificar se tudo foi preenchido e caso isso seja verdadeiro a média pode ser calculada.
 
